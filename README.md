@@ -1,33 +1,25 @@
-# RUNAWAY - Finger Piano
+# 🎹 Runaway - Finger Piano (Modular HUD Edition)
 
-A virtual piano that uses the camera to detect finger movements and play the iconic riff of Kanye West's "Runaway" using computer vision.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-green?style=flat-square&logo=opencv)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand_Tracking-orange?style=flat-square)
+![Pygame](https://img.shields.io/badge/Pygame-Audio_Engine-yellow?style=flat-square)
 
-## Features
+Um piano virtual tocado no ar através de visão computacional! Este projeto permite que você toque a icônica introdução de **"Runaway" do Kanye West** utilizando apenas os movimentos dos seus dedos em frente à webcam.
 
-- Real-time hand and finger detection with MediaPipe.
 
-- Stylized interface inspired by the artwork of the album "My Beautiful Dark Twisted Fantasy".
+---
 
-- Real-time piano sound synthesis for the notes.
+## 🏗️ Arquitetura do Projeto
 
-- Virtual keyboard and audio waveform visualizer.
+O sistema monolítico foi dividido em componentes especialistas para facilitar a leitura e escalabilidade:
 
-## Installation
-
-1. Clone this repository.
-
-2. Install the necessary Python dependencies:
-
-``bash
-pip install -r requirements.txt
-
-```
-
-## How to Run
-
-Run the main script from your terminal:
-
-```bash
-python runaway_fingers.py
-```
-Point your palm at the camera and bend your fingers to play the notes. Press 'q' to exit.# runaway-finger-piano
+```text
+📦 runaway-finger-piano
+ ┣ 📜 main.py       # Entry-point: Orquestra o loop principal do vídeo e do jogo.
+ ┣ 📜 config.py     # Central de configurações: Frequências, cores, constantes e layout.
+ ┣ 📜 vision.py     # Inteligência Artificial: Download do modelo e tracking da mão (MediaPipe).
+ ┣ 📜 audio.py      # Motor de Som: Geração matemática das ondas e integração com Pygame.
+ ┣ 📜 ui.py         # Renderização: Desenho de HUDs dinâmicos, osciloscópio e botões com OpenCV.
+ ┣ 📜 requirements.txt
+ ┗ 📜 .gitignore
