@@ -5,7 +5,7 @@
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand_Tracking-orange?style=flat-square)
 ![Pygame](https://img.shields.io/badge/Pygame-Audio_Engine-yellow?style=flat-square)
 
-Um piano virtual tocado no ar através de visão computacional! Este projeto permite que você toque a icônica introdução de **"Runaway" do Kanye West** utilizando apenas os movimentos dos seus dedos em frente à webcam.
+Um piano virtual tocado no ar através de visão computacional! Este projeto permite que você toque a introdução de **"Runaway" do Kanye West** utilizando apenas os movimentos dos seus dedos em frente à webcam.
 
 
 ---
